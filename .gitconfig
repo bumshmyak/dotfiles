@@ -12,6 +12,7 @@ br = branch
 co = checkout
 df = diff
 lg = log -p
+pom = pull origin master
 
 ### Colorful
 [color]
