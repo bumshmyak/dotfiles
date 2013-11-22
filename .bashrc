@@ -13,6 +13,6 @@ alias egrep='egrep --color=auto'
 
 CUSTOM_HOSTNAME=`hostname -s`
 [ -f ~/.bashrc_local ] && . ~/.bashrc_local
-export PS1="\[\`if [[ \$? = "0" ]]; then echo '\e[32m$CUSTOM_HOSTNAME\e[0m'; else echo '\e[31m\h\e[0m' ; fi\`:\w\n\$ "
+export PS1="\[\`if [[ \$? = "0" ]]; then echo '\e[32m$CUSTOM_HOSTNAME\e[0m'; else echo '\e[31m$CUSTOM_HOSTNAME\e[0m' ; fi\`:\w\n\$ "
 
 cd
