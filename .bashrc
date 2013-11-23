@@ -5,11 +5,13 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 alias tm="tmux attach || tmux new"
-alias l='ls -alGh'
+
+alias l='ls --color -alh'
+eval `dircolors $HOME/.dir_colors`
+
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-
 
 CUSTOM_HOSTNAME=`hostname -s`
 [ -f ~/.bashrc_local ] && . ~/.bashrc_local
